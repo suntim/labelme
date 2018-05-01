@@ -104,7 +104,7 @@ class LabelFile(object):
             # 8 write xml
             dataxml = etree.tostring(Xmldata, pretty_print=True, encoding="UTF-8", method="xml",
                                      xml_declaration=True, standalone=None)
-            with open(os.path.join(Save_TestUIXml_dir, (imagePath.split('.')[0] + '.xml')), 'w') as fp:
+            with open(os.path.join(Save_TestUIXml_dir, (imagePath.split('.')[0] + '.xml')), 'wb') as fp:
                 fp.write(dataxml)
 
 
